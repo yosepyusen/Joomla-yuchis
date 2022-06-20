@@ -1,0 +1,235 @@
+{
+  "pro": [
+    {
+      "id": "r2vf",
+      "name": "R2vf",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/r2vf/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/r2vf/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_r2vf_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "pillow",
+      "name": "Pillow",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/pillow/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/pillow/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_pillow_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "hiway",
+      "name": "Hiway",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/hiway/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/hiway/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_hiway_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/corporate/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/corporate/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_corporate_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/portfolio/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/portfolio/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_portfolio_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/education/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/education/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_education_sample_data_j3x.zip",
+      "tags": []
+    },	  
+    {
+      "id": "magazine",
+      "name": "Magazine",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/magazine/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/magazine/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_magazine_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "sportnews",
+      "name": "Sportnews",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/sportnews/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/sportnews/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_sportnews_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "ngo",
+      "name": "NGO",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/ngo/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/ngo/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_ngo_sample_data_j3x.zip",
+      "tags": []
+    }  
+  ],
+  "developer": [
+    {
+      "id": "r2vf",
+      "name": "R2vf",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/r2vf/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/r2vf/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_r2vf_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "pillow",
+      "name": "Pillow",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/pillow/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/pillow/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_pillow_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "hiway",
+      "name": "Hiway",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/hiway/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/hiway/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_hiway_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/corporate/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/corporate/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_corporate_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/portfolio/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/portfolio/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_portfolio_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/education/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/education/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_education_sample_data_j3x.zip",
+      "tags": []
+    },	  
+    {
+      "id": "magazine",
+      "name": "Magazine",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/magazine/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/magazine/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_magazine_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "sportnews",
+      "name": "Sportnews",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/sportnews/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/sportnews/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_sportnews_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "ngo",
+      "name": "NGO",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/ngo/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/ngo/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_ngo_sample_data_j3x.zip",
+      "tags": []
+    }  
+  ],
+  "individual": [
+    {
+      "id": "r2vf",
+      "name": "R2vf",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/r2vf/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/r2vf/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_r2vf_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "pillow",
+      "name": "Pillow",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/pillow/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/pillow/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_pillow_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "hiway",
+      "name": "Hiway",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/hiway/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/hiway/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_hiway_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "corporate",
+      "name": "Corporate",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/corporate/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/corporate/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_corporate_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/portfolio/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/portfolio/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_portfolio_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/education/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/education/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_education_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "magazine",
+      "name": "Magazine",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/magazine/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/magazine/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_magazine_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "sportnews",
+      "name": "Sportnews",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/sportnews/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/sportnews/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_sportnews_sample_data_j3x.zip",
+      "tags": []
+    },
+    {
+      "id": "ngo",
+      "name": "NGO",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/ngo/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/ngo/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_ngo_sample_data_j3x.zip",
+      "tags": []
+    }
+  ],
+  "free": [
+    {
+      "id": "ngo",
+      "name": "NGO",
+      "thumbnail": "http://demo.joomlashine.com/media/joomla-templates/jsn_shine/ngo/thumbnail.jpg",
+      "demo": "http://demo.joomlashine.com/joomla-templates/jsn_shine/pro/ngo/index.php",
+      "download": "https://joomlashine.com/files/downloads/sample-data/jsn_shine_pro_ngo_sample_data_j3x.zip",
+      "tags": []
+    }
+  ]
+}
+

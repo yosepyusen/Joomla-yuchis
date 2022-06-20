@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension method="upgrade" version="3.2" type="template" client="site">
+<name>presslab</name>
+<creationDate>2018-07-22</creationDate>
+<author>LineLab.org</author>
+<authorEmail>linelab@linelab.org</authorEmail>
+<authorUrl>http://www.linelab.org</authorUrl>
+<copyright>Copyright (C) 2005 - 2017 LineLab. All rights reserved.</copyright>
+<license>GNU General Public License version 2</license>
+<version>1.0</version>
+<scriptfile>script.php</scriptfile>
+<description>
+<![CDATA[
+<style type="text/css" media="all">
+#box1 {padding:0px 0px 4px 0px;}
+h1 {clear:both;font-family: Arial, sans-serif;font-size:36px;margin:20px ;padding:0px 0px 25px 10px;color:#444; border-bottom: 1px solid #ccc; font-weight: normal;}
+h5, .install_label {border: none;  margin: 0 0 12px; padding:0; font: italic 25px Arial,sans-serif; color: #1d87da;}
+.box2 {background:#fff;padding: 20px; font-family: Arial; font-size:13px; color: #666; line-height: 25px;}
+ul.installInfo.level1 {background: #eee; padding: 15px; margin: 0; margin-top: 20px; margin-bottom: 30px; line-height: 25px; list-style: none;}
+ul.installInfo.level2 {margin: 0; list-style: none;}
+ul.installInfo.level2 li {line-height: 18px; padding: 5px 0; border-bottom: 1px solid #ccc; list-style: none;}
+.box3{margin: 16px 0 0 40%; font-weight:normal !important;}
+.demolink {margin-bottom: 25px;} 
+pre {margin-top: 15px; margin-bottom: 15px;} 
+.install_warning {padding: 10px 0; color: red;} 
+</style>	
+<div id="box1">    
+<h1><em>Linelabox Template - Presslab</em></h1>
+<div class="box2"> <a title="Visit demo" href="https://www.linelab.org" target="_blank">
+<img style="float: left; border: 20px solid #fff; max-height: 250px;" src="../templates/presslab/template_preview.png" border="0" alt="Linelabox template" /></a>
+<div class="box3">
+<h5>Joomla Template Created by Linelabox</h5>
+<p>Linelabox is Live Template Builder for Joomla, that includes full access to all the design features you might need.</p>
+<p class="demolink">View Linelabox demo <a href="https://www.linelab.org/" target="_blank">here</a>...</p>
+<p>To activate the new template go to Extensions, click on Template Manager, choose the installed template and click on Make Default. See below or the Modules section for an overview of installed/updated modules. If you will uninstall this template, installed modules will not be removed automatically. You should remove them manually! See the Changelog if you want to learn what changed with this latest release. </p>
+</div>
+</div>
+</div> 
+]]>
+</description>
+<files>
+<filename>component.php</filename>
+<filename>error.php</filename>
+<filename>offline.php</filename>
+<filename>favicon.ico</filename>
+<filename>index.php</filename>
+<filename>helper.php</filename>
+<filename>templateDetails.xml</filename>
+<filename>template_preview.png</filename>
+<filename>template_thumbnail.png</filename>
+<folder>css</folder>
+<folder>html</folder>
+<folder>modules</folder>
+<folder>fonts</folder>
+<folder>images</folder>
+<folder>js</folder>
+<folder>language</folder>
+</files>
+<positions>
+	<position>rightbox2</position>
+	<position>abox1</position>
+	<position>abox2</position>
+	<position>cbox1</position>
+	<position>cbox2</position>
+	<position>cbox3</position>
+	<position>dbox1</position>
+	<position>ebox1</position>
+	<position>fbox1</position>
+	<position>gbox1</position>
+	<position>kbox1</position>
+	<position>lbox1</position>
+	<position>pbox1</position>
+	<position>qbox1</position>
+	<position>rbox1</position>
+	<position>rbox2</position>
+	<position>sbox1</position>
+	<position>sbox2</position>
+	<position>sbox3</position>
+	<position>tbox1</position>
+	<position>debug</position>
+</positions>
+<languages folder="language">
+<language tag="en-GB">en-GB/en-GB.tpl_presslab.sys.ini</language>
+<language tag="en-GB">en-GB/en-GB.tpl_presslab.ini</language>
+</languages>
+<config>
+<fields name="params">
+<fieldset name="advanced">
+<field name="disable_sticky_navigation" type="list" default="0" label="TPL_PRESSLAB_DISABLE_STICKY_NAVIGATION" description="TPL_PRESSLAB_DISABLE_STICKY_NAVIGATION">
+<option value="0">JNO</option>
+<option value="1">JYES</option>
+</field>
+<field name="bootstrap_version" type="list" default="3" label="TPL_PRESSLAB_BOOTSTRAP_JAVASCRIPT_VERSION" description="TPL_PRESSLAB_BOOTSTRAP_JAVASCRIPT_VERSION_DESC">
+<option value="3">TPL_PRESSLAB_BOOTSTRAP_3</option>
+<option value="2">TPL_PRESSLAB_BOOTSTRAP_2</option>
+</field>
+</fieldset>
+</fields>
+</config>
+</extension>

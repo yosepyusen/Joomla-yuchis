@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+        <name>Responsive Tables</name>
+        <author>web-eau.net</author>
+        <creationDate>November 2013</creationDate>
+        <copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later</license>
+        <authorEmail>daniel@web-eau.net</authorEmail>
+        <authorUrl>www.web-eau.net</authorUrl>
+        <version>2.0.0</version>
+        <description>
+		 <![CDATA[
+		<style type="text/css">
+			span.readonly { padding: 10px; font-family: Calibri; font-size:13px !important; font-weight: normal !important; text-align: justify; color: #4d4d4d; line-height: 24px; }
+			span.readonly h1 { clear:both; font-family: Calibri, sans-serif; font-size:38px; margin:0px 20px 0px 23px; padding:0px 0px 10px 5px; color:#151d4e; border-bottom: 3px solid #ccc; font-weight: normal; }
+			span.readonly p { margin: 15px 0 15px 10px }
+			span.readonly p a { color: #151d4e }
+			span.readonly p.support { margin-top: 15px }
+			span.readonly p.license { border-top: 1px solid #eee; font-size: 11px; margin: 15px 26px 0; padding: 6px 0; }
+		</style>
+		<span class="readonly"><h1>Responsive Tables</h1>
+		
+		<p>Thank you for buying and downloading this extension!<br /> Responsive Tables is a "new generation" plugin dedicated for Joomla versions 2.5 and above.</p>
+		<p>With this plugin, you will be able to make responsive any table in your website. This plugin offer you a great implementation:<br>
+		<ul>
+		<li>Doesn't break responsive layouts,</li>
+		<li>Doesn't unnecessarily hide data,</li>
+		<li>Still lets you compare rows.</li>
+		</ul>
+		</p>
+		<p>After installation, publish the plugin. <br />
+		On any data table in your markup, you simply need to attach the classes <strong>responsive</strong> and <strong>rt</strong> like that: < table class="responsive rt" > and that's all !<br/>
+		This plugin was successfuly tested on Apple iPhone, iPad, on Android and also on BlackBerry Z10.	
+		</p> 
+		
+		<img src="../plugins/content/responsive-tables/schema.jpg" align="left" style="margin: 0px 10px 10px 0px;" /> 
+		
+		<p class='support'>Have question or need help about this extension ? Please, ask your questions on our <a href='http://www.web-eau.net/forum/index' target='_blank'>support forum</a>.</p>
+		
+		<p class='support'>You like this extension ? Thanks in advance for your positive review on <strong>Joomla Extension Directory</strong>.</p>
+		
+		<p class='license'>Responsive Tables is release under <a target="_blank" href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL v2 license.</a></p></span>
+		]]>			
+		</description>
+        <files>
+                <filename plugin="responsive-tables">responsive-tables.php</filename>
+                <filename>responsive-tables.css</filename>
+				<filename>responsive-tables.php</filename>
+				<filename>schema.jpg</filename>
+        </files>
+</extension>

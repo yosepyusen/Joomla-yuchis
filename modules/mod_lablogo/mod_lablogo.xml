@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Linelabox logo Module</name>
+    <creationDate>January 2018</creationDate>
+    <author>Linelab</author>
+    <authorUrl>http://www.linelab.org</authorUrl>
+    <copyright>Copyright (C) 2018 Liinelab.org. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0</version>
+    <description>MOD_LABLOGO_DESC</description>
+    <files>
+        <filename module="mod_lablogo">mod_lablogo.php</filename>
+        <filename>tmpl/default.php</filename>
+		<folder>language</folder>
+    </files>
+    <config>
+        <fields name="params">
+			<fieldset name="basic">
+				<field
+					name="logoimage"
+					type="media"
+					label="MOD_LABLOGO_IMAGE_LABEL"
+					description="MOD_LABLOGO_IMAGE_DESC"
+					required="false"
+				/>
+				<field
+					name="logoslogan"
+					type="text"
+					label="MOD_LABLOGO_SLOGAN_LABEL"
+					description="MOD_LABLOGO_SLOGAN_DESC"
+					/>
+			</fieldset>
+		</fields>	
+    </config>
+</extension>

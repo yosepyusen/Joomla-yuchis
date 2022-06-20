@@ -1,0 +1,1 @@
+jQuery(function($){$(".bootstrap-touch-slider").bsTouchSlider();});

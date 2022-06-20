@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Linelabox Slideshow Module</name>
+    <creationDate>February 2017</creationDate>
+    <author>Linelab</author>
+    <authorUrl>http://www.linelabox.com</authorUrl>
+    <copyright>Copyright (C) 2017 Linelabox.com All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0</version>
+    <description>MOD_LABSLIDESHOW_DESC</description>
+    <files>
+        <filename module="mod_labslideshow">mod_labslideshow.php</filename>
+        <filename>tmpl/default.php</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+		<folder>language</folder>
+    </files>
+    <config>
+        <fields name="params">
+				<fieldset name="basic">
+				<field name="note0" type="note" label="Global Settings" />
+				<field type="spacer" name="spacer0" hr="true"/>
+					
+								<field
+					name="slidetype"
+					type="list"
+					label="MOD_LABSLIDESHOW_SLIDETYPE_LABEL"
+					description="MOD_LABSLIDESHOW_SLIDETYPE_DESC"
+					default="fade"
+					>
+					<option value="fade">fade</option>
+					<option value="slide">slide</option>
+				</field>
+					
+				<field
+					name="indicators"
+					type="radio"
+					label="MOD_LABSLIDESHOW_INDICATORS_LABEL"
+					description="MOD_LABSLIDESHOW_INDICATORS_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="controls"
+					type="radio"
+					label="MOD_LABSLIDESHOW_CONTROLS_LABEL"
+					description="MOD_LABSLIDESHOW_CONTROLS_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				
+				<field
+					name="showimage"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWIMAGE_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWIMAGE_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="headtype" type="headertag"
+					label="COM_MODULES_FIELD_HEADER_TAG_LABEL"
+					description="COM_MODULES_FIELD_HEADER_TAG_DESC" 
+					default="h1"/>
+
+				<field
+					name="numberofslides"
+					type="list"
+					label="MOD_LABSLIDESHOW_NUMBEROFSLIDES_LABEL"
+					description="MOD_LABSLIDESHOW_NUMBEROFSLIDES_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</field>
+				
+				<field name="note1" type="note" label="Slide 1"/>
+
+				<field type="spacer" name="spacer1" hr="true"/>
+				
+
+				<field
+					name="1slidestyle"
+					type="list"
+					label="MOD_LABSLIDESHOW_SLIDESTYLE_LABEL"
+					description="MOD_LABSLIDESHOW_SLIDESTYLE_DESC"
+					default="slide_style_left"
+					>
+					<option value="slide_style_left">slide_style_left</option>
+					<option value="slide_style_right">slide_style_right</option>
+					<option value="slide_style_center">slide_style_center</option>
+				</field>
+				
+								<field
+					name="1showimages"
+					type="media"
+					label="MOD_LABSLIDESHOW_SHOWIMAGES_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWIMAGES_DESC"
+					size="100"
+					required="false"
+				/>
+
+				
+				<field
+					name="1datanimation2"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA2_LABEL"
+					description="MOD_LABSLIDESHOW_DATA2_DESC"
+					default="fadeInLeft"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+							
+				
+				
+				<field
+					name="1datanimation1"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA1_LABEL"
+					description="MOD_LABSLIDESHOW_DATA1_DESC"
+					default="zoomInRight"
+					>
+				<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="1headingtext"
+					type="text"
+					label="MOD_LABSLIDESHOW_HEADINGTEXT_LABEL"
+					description="MOD_LABSLIDESHOW_HEADINGTEXT_DESC"
+					/>
+				
+				
+				<field
+					name="1slidetext"
+					type="textarea"
+					label="MOD_LABSLIDESHOW_TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_TEXT_DESC"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+				/>
+				<field
+					name="1datanimation3"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA3_LABEL"
+					description="MOD_LABSLIDESHOW_DATA3_DESC"
+					default="fadeInLeft"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="1datanimation4"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA4_LABEL"
+					description="MOD_LABSLIDESHOW_DATA4_DESC"
+					default="fadeInRight"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+					<field
+					name="1showbt1"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT1_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT1_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+								<field
+					name="1urlbt1"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL_LABEL"
+					description="MOD_LABSLIDESHOW_URL_DESC"
+					size="100"
+					required="false"
+				/>
+				
+		<field
+					name="1button1text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON1TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON1TEXT_DESC"
+				/>
+				
+				<field
+					name="1showbt2"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT2_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT2_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="1urlbt2"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL2_LABEL"
+					description="MOD_LABSLIDESHOW_URL2_DESC"
+					size="100"
+					required="false"
+				/>
+
+				<field
+					name="1button2text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON2TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON2TEXT_DESC"
+				/>	
+
+				<field name="note2" type="note" label="Slide 2" showon="numberofslides:2,3,4,5"/>
+				<field type="spacer" name="spacer2" label="Slide 2" hr="true" showon="numberofslides:2,3,4,5"/>
+	
+				
+				<field
+					name="2datanimation3"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA3_LABEL"
+					description="MOD_LABSLIDESHOW_DATA3_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="2datanimation4"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA4_LABEL"
+					description="MOD_LABSLIDESHOW_DATA4_DESC"
+					default="fadeInRight"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+
+				
+						<field
+					name="2slidestyle"
+					type="list"
+					label="MOD_LABSLIDESHOW_SLIDESTYLE_LABEL"
+					description="MOD_LABSLIDESHOW_SLIDESTYLE_DESC"
+					default="slide_style_center"
+					showon="numberofslides:2,3,4,5"
+					>
+				<option value="slide_style_left">slide_style_left</option>
+					<option value="slide_style_right">slide_style_right</option>
+					<option value="slide_style_center">slide_style_center</option>
+				</field>
+				
+				<field
+					name="2showimages"
+					type="media"
+					label="MOD_LABSLIDESHOW_SHOWIMAGES_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWIMAGES_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:2,3,4,5"
+				/>
+
+				<field
+					name="2datanimation2"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA2_LABEL"
+					description="MOD_LABSLIDESHOW_DATA2_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+											
+				<field
+					name="2datanimation1"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA1_LABEL"
+					description="MOD_LABSLIDESHOW_DATA1_DESC"
+					default="zoomInRight"
+					showon="numberofslides:2,3,4,5"
+					>
+						<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="2headingtext"
+					type="text"
+					label="MOD_LABSLIDESHOW_HEADINGTEXT_LABEL"
+					description="MOD_LABSLIDESHOW_HEADINGTEXT_DESC"
+					showon="numberofslides:2,3,4,5"
+				/>
+				
+				
+				<field
+					name="2slidetext"
+					type="textarea"
+					label="MOD_LABSLIDESHOW_TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_TEXT_DESC"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					showon="numberofslides:2,3,4,5"
+				/>
+							<field
+					name="2datanimation3"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA3_LABEL"
+					description="MOD_LABSLIDESHOW_DATA3_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="2datanimation4"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA4_LABEL"
+					description="MOD_LABSLIDESHOW_DATA4_DESC"
+					default="fadeInRight"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+						<field
+					name="2showbt1"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT1_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT1_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="2urlbt1"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL_LABEL"
+					description="MOD_LABSLIDESHOW_URL_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:2,3,4,5"
+				/>
+				
+								<field
+					name="2button1text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON1TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON1TEXT_DESC"
+					showon="numberofslides:2,3,4,5"
+				/>
+				
+				<field
+					name="2showbt2"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT2_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT2_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					showon="numberofslides:2,3,4,5"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="2urlbt2"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL2_LABEL"
+					description="MOD_LABSLIDESHOW_URL2_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:2,3,4,5"
+				/>
+
+				<field
+					name="2button2text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON2TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON2TEXT_DESC"
+					showon="numberofslides:2,3,4,5"
+				/>	
+				
+				<field name="note3" type="note" label="Slide 3" showon="numberofslides:3,4,5"/>
+				<field type="spacer" name="spacer3" label="Slide 3" hr="true" showon="numberofslides:3,4,5"/>
+				
+				
+				<field
+					name="3slidestyle"
+					type="list"
+					label="MOD_LABSLIDESHOW_SLIDESTYLE_LABEL"
+					description="MOD_LABSLIDESHOW_SLIDESTYLE_DESC"
+					default="slide_style_left"
+					showon="numberofslides:3,4,5"
+					>
+				<option value="slide_style_left">slide_style_left</option>
+					<option value="slide_style_right">slide_style_right</option>
+					<option value="slide_style_center">slide_style_center</option>
+				</field>
+				
+				<field
+					name="3showimages"
+					type="media"
+					label="MOD_LABSLIDESHOW_SHOWIMAGES_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWIMAGES_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:3,4,5"
+				/>
+						
+				<field
+					name="3datanimation2"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA2_LABEL"
+					description="MOD_LABSLIDESHOW_DATA2_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>			
+				
+				<field
+					name="3datanimation1"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA1_LABEL"
+					description="MOD_LABSLIDESHOW_DATA1_DESC"
+					default="zoomInLeft"
+					showon="numberofslides:3,4,5"
+					>
+				<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="3headingtext"
+					type="text"
+					label="MOD_LABSLIDESHOW_HEADINGTEXT_LABEL"
+					description="MOD_LABSLIDESHOW_HEADINGTEXT_DESC"
+					showon="numberofslides:3,4,5"
+				/>
+				
+				
+				<field
+					name="3slidetext"
+					type="textarea"
+					label="MOD_LABSLIDESHOW_TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_TEXT_DESC"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					showon="numberofslides:3,4,5"
+				/>
+					<field
+					name="3datanimation3"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA3_LABEL"
+					description="MOD_LABSLIDESHOW_DATA3_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="3datanimation4"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA4_LABEL"
+					description="MOD_LABSLIDESHOW_DATA4_DESC"
+					default="fadeInRight"
+					showon="numberofslides:3,4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				<field
+					name="3showbt1"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT1_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT1_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					showon="numberofslides:3,4,5"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="3urlbt1"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL_LABEL"
+					description="MOD_LABSLIDESHOW_URL_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:3,4,5"
+				/>
+								<field
+					name="3button1text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON1TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON1TEXT_DESC"
+					showon="numberofslides:3,4,5"
+				/>
+				<field
+					name="3showbt2"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT2_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT2_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					showon="numberofslides:3,4,5"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="3urlbt2"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL2_LABEL"
+					description="MOD_LABSLIDESHOW_URL2_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:3,4,5"
+				/>
+
+				<field
+					name="3button2text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON2TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON2TEXT_DESC"
+					showon="numberofslides:3,4,5"
+				/>	
+
+				<field name="note4" type="note" label="Slide 4" showon="numberofslides:4,5"/>
+				<field type="spacer" name="spacer4" label="Slide 4" hr="true" showon="numberofslides:4,5"/>
+				
+				
+				<field
+					name="4showimages"
+					type="media"
+					label="MOD_LABSLIDESHOW_SHOWIMAGES_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWIMAGES_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:4,5"
+				/>
+						
+				<field
+					name="4slidestyle"
+					type="list"
+					label="MOD_LABSLIDESHOW_SLIDESTYLE_LABEL"
+					description="MOD_LABSLIDESHOW_SLIDESTYLE_DESC"
+					default="slide_style_left"
+					showon="numberofslides:4,5"
+					>
+				<option value="slide_style_left">slide_style_left</option>
+					<option value="slide_style_right">slide_style_right</option>
+					<option value="slide_style_center">slide_style_center</option>
+				</field>
+				
+				<field
+					name="4datanimation2"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA2_LABEL"
+					description="MOD_LABSLIDESHOW_DATA2_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>			
+				
+				<field
+					name="4datanimation1"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA1_LABEL"
+					description="MOD_LABSLIDESHOW_DATA1_DESC"
+					default="zoomInLeft"
+					showon="numberofslides:4,5"
+					>
+				<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="4headingtext"
+					type="text"
+					label="MOD_LABSLIDESHOW_HEADINGTEXT_LABEL"
+					description="MOD_LABSLIDESHOW_HEADINGTEXT_DESC"
+					showon="numberofslides:4,5"
+				/>
+				
+				
+				<field
+					name="4slidetext"
+					type="textarea"
+					label="MOD_LABSLIDESHOW_TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_TEXT_DESC"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					showon="numberofslides:4,5"
+				/>
+					<field
+					name="4datanimation3"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA4_LABEL"
+					description="MOD_LABSLIDESHOW_DATA4_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="4datanimation4"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA4_LABEL"
+					description="MOD_LABSLIDESHOW_DATA4_DESC"
+					default="fadeInRight"
+					showon="numberofslides:4,5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				<field
+					name="4showbt1"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT1_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT1_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="4urlbt1"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL_LABEL"
+					description="MOD_LABSLIDESHOW_URL_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:4,5"
+				/>
+				
+								<field
+					name="4button1text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON1TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON1TEXT_DESC"
+					showon="numberofslides:4,5"
+				/>
+				
+				<field
+					name="4showbt2"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT2_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT2_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					showon="numberofslides:4,5"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="4urlbt2"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL2_LABEL"
+					description="MOD_LABSLIDESHOW_URL2_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:4,5"
+				/>
+
+				<field
+					name="4button2text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON2TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON2TEXT_DESC"
+					showon="numberofslides:4,5"
+				/>	
+
+				<field name="note5" type="note" label="Slide 5" showon="numberofslides:5"/>
+				<field type="spacer" name="spacer5" label="Slide 5" hr="true" showon="numberofslides:5"/>
+				
+				
+				<field
+					name="5showimages"
+					type="media"
+					label="MOD_LABSLIDESHOW_SHOWIMAGES_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWIMAGES_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:5"
+				/>
+						
+				<field
+					name="5slidestyle"
+					type="list"
+					label="MOD_LABSLIDESHOW_SLIDESTYLE_LABEL"
+					description="MOD_LABSLIDESHOW_SLIDESTYLE_DESC"
+					default="slide_style_left"
+					showon="numberofslides:5"
+					>
+				<option value="slide_style_left">slide_style_left</option>
+					<option value="slide_style_right">slide_style_right</option>
+					<option value="slide_style_center">slide_style_center</option>
+				</field>
+				
+				<field
+					name="5datanimation2"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA2_LABEL"
+					description="MOD_LABSLIDESHOW_DATA2_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>			
+				
+				<field
+					name="5datanimation1"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA1_LABEL"
+					description="MOD_LABSLIDESHOW_DATA1_DESC"
+					default="zoomInLeft"
+					showon="numberofslides:5"
+					>
+				<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="5headingtext"
+					type="text"
+					label="MOD_LABSLIDESHOW_HEADINGTEXT_LABEL"
+					description="MOD_LABSLIDESHOW_HEADINGTEXT_DESC"
+					showon="numberofslides:5"
+				/>
+				
+				
+				<field
+					name="5slidetext"
+					type="textarea"
+					label="MOD_LABSLIDESHOW_TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_TEXT_DESC"
+					filter="safehtml"
+					cols="30"
+					rows="5"
+					showon="numberofslides:5"
+				/>
+				<field
+					name="5datanimation3"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA5_LABEL"
+					description="MOD_LABSLIDESHOW_DATA5_DESC"
+					default="fadeInLeft"
+					showon="numberofslides:5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				
+				<field
+					name="5datanimation4"
+					type="list"
+					label="MOD_LABSLIDESHOW_DATA5_LABEL"
+					description="MOD_LABSLIDESHOW_DATA5_DESC"
+					default="fadeInRight"
+					showon="numberofslides:5"
+					>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomNone">None</option>
+				</field>
+				<field
+					name="5showbt1"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT1_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT1_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="5urlbt1"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL_LABEL"
+					description="MOD_LABSLIDESHOW_URL_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:5"
+				/>
+								<field
+					name="5button1text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON1TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON1TEXT_DESC"
+					showon="numberofslides:5"
+				/>
+				<field
+					name="5showbt2"
+					type="radio"
+					label="MOD_LABSLIDESHOW_SHOWBT2_LABEL"
+					description="MOD_LABSLIDESHOW_SHOWBT2_DESC"
+					class="btn-group btn-group-yesno"
+					default="1"
+					showon="numberofslides:5"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="5urlbt2"
+					type="url"
+					label="MOD_LABSLIDESHOW_URL2_LABEL"
+					description="MOD_LABSLIDESHOW_URL2_DESC"
+					size="100"
+					required="false"
+					showon="numberofslides:5"
+				/>
+
+				<field
+					name="5button2text"
+					type="text"
+					label="MOD_LABSLIDESHOW_BUTTON2TEXT_LABEL"
+					description="MOD_LABSLIDESHOW_BUTTON2TEXT_DESC"
+					showon="numberofslides:5"
+				/>	
+			</fieldset>
+		</fields>	
+    </config>
+</extension>
